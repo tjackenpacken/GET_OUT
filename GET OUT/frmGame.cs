@@ -157,13 +157,9 @@ namespace GET_OUT
         {
             if (character != null)
             {
-                
                 PlayerThinking(character.Description);
-
                 ucCharacterClicked characterControl = new ucCharacterClicked(character, User, ActiveRoom, this);
                 this.roomPanel.Controls.Add(characterControl);
-
-
                 characterControl.Show();
                 characterControl.BringToFront();
             }
@@ -186,7 +182,6 @@ namespace GET_OUT
             if (item != null)
             {
                 PlayerThinking(item.Description);
-
                 ucItemClicked itemControl = new ucItemClicked(item, User, ActiveRoom, this);
                 this.roomPanel.Controls.Add(itemControl);
                 ItemClick = itemControl;
